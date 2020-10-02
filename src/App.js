@@ -1,15 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import SearchMoviesComponent from './SearchMoviesComponent';
 
-function App() {
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-    Hello test
-      </header>
+    <div className="container">
+      <h1 className="title">
+          React movie search
+      </h1>
+      <SearchMoviesComponent/>
     </div>
   );
+}
 }
 
 export default App;
